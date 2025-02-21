@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demande de devis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Demande de devis</h2>
+
+    <form action="submit_devis.php" method="POST">
+        <label for="type_travail">Type de travail :</label>
+        <select name="type_travail" id="type_travail">
+            <option value="Pose de parquet">Pose de parquet</option>
+            <option value="Peinture">Peinture</option>
+            <option value="Pose de carrelage">Pose de carrelage</option>
+            <option value="Autre">Autre</option>
+        </select>
+
+        <label for="description_travail">Description du travail :</label>
+        <textarea name="description_travail" id="description_travail" rows="4"></textarea>
+
+        <label for="departements">Département(s) concerné(s) :</label>
+        <input type="text" id="departements" name="departements">
+
+        <button type="submit">Envoyer la demande de devis</button>
+    </form>
+
+</body>
+</html>
